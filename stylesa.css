@@ -1,0 +1,32 @@
+body {
+	background-image: url(imagenes/optica.jpg);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	margin: 0;
+	font-family: monospace;
+}
+
+
+.main-header {
+	
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:10px;
+	padding-bottom:10px;
+
+}
+.nav-link{
+	color:white;
+	margin-right:4px;
+
+}
+.text-center{
+	text-align:center;
+
+}
+.red-text{
+	color:#F4B869;
+}
+.main-container {
+	min-height: 100vh;
+}

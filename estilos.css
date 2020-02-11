@@ -1,0 +1,11 @@
+body {
+	background-image: url(imagenes/optica.jpg);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	margin: 0;
+}
+.nav-link{
+	color:white;
+	margin-right:4px;
+
+}

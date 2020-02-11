@@ -1,0 +1,81 @@
+<html>
+<meta charset="utf-8">
+<style>
+
+table
+{
+	margin: auto;
+	background: rgba(0,0,0,0.4);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	border-radius: 7px;
+
+}
+
+input[type=text], input[type=password]
+{
+width: 100%;
+padding: 8px 20px;
+border: 2px solid #ccc;
+box-sizing: border-box;
+}
+
+img
+{
+width: 100px;
+height: 100px;
+}
+
+label
+{
+font-size: 14px;
+font-weight: bold;
+font-family: arial;
+color: white;
+}
+
+input[type=submit]
+{
+background-color: #AF7AC5;
+color:white;
+padding: 8px 10px;
+margin: 8px 0px;
+border: solid;
+cursor: pointer;
+width: 40%;
+}
+</style>
+<header>
+
+<a href="vista1" style="color: black">¿Que es esto?...</a>
+<a href="vista2.html" style="color: black">Contactanos</a>
+</header>
+<script>
+function usrpas(){
+if (document.form1.usuario.value=="comprador" && document.form1.password.value=="comprador"){window.location="producto.html";return}
+if (document.form1.usuario.value=="administrador" && document.form1.password.value=="administrador"){window.location="dashboard.html";}
+else {alert("Error en Usuario o Contraseña. Intenta de nuevo.")}
+}
+
+document.oncontextmenu=new Function("return false");
+</script>
+<center>
+<form name = form1>
+<table>
+<link rel="stylesheet" href="estilos.css">
+<tr><td colspan="2" style="background: rgba(0,0,0,0.4); padding-bottom:5px; padding-top:5px;box-sizing: border-box;
+	margin-top: 20px;
+	border-radius: 7px;"><label>login</label></td></tr>
+<tr><td align="center" rowspan="5"><img src="candado1.png"/>
+</td><td><label>Usuario</label></td></tr>
+<tr><td><input type="text" name="usuario"/></td></tr>
+<tr><td><label>Contraseña</label></td></tr>
+<tr><td><input type="password" name="password" /> </td></tr>
+<tr><td><input type="Button" value="Ingresar" onClick="usrpas()"/> </td></tr>
+
+</table>
+</form>
+
+</center>
+</html>
